@@ -12,15 +12,19 @@
 
 body {
   margin-inline: auto;
+  font-family: "Roboto Slab", serif;
 }
 
+strong {
+  color: var(--preto);
+  font-weight: 700;
+}
 /* --------- HEADER and HOME--------- */
 .header {
   background-image: url(/assets/banner-desktop.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  height: 100dvh;
   padding-inline: 220px;
 }
 
@@ -89,3 +93,104 @@ header {
 }
 
 /* --------- HEADER and HOME--------- */
+
+.container {
+  display: flex;
+  align-items: center;
+  background-color: var(--primaria);
+  width: 100%;
+}
+
+.escritas {
+  /* margin: 0 auto; */
+  overflow: hidden;
+}
+
+.escritas ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  animation: 25s infinite slide linear;
+}
+
+.escritas p {
+  padding-top: 20px;
+  padding-bottom: 18px;
+  font-size: 18px;
+  width: 180px;
+  color: var(--branco);
+  font-family: "Rhodium Libre", serif;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-1140px);
+  }
+}
+
+.container ul:hover {
+  animation-play-state: paused;
+}
+
+/* --------- DESTAQUES --------- */
+.title-destaques {
+  font-size: 24px;
+}
+
+.dados {
+  background: rgb(232, 235, 247);
+  background: linear-gradient(
+    180deg,
+    rgba(232, 235, 247, 1) 0%,
+    rgba(186, 189, 198, 1) 50%,
+    rgba(209, 146, 62, 1) 95%
+  );
+}
+
+.dados div h2 {
+  font-size: 28px;
+  padding-top: 100px;
+
+  font-family: "Rhodium Libre", serif;
+  letter-spacing: 16px;
+}
+.paragrafos-destaques {
+  font-size: 14px;
+  line-height: 20px;
+  width: 300px;
+}
+
+.infos-dados {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  row-gap: 40px;
+}
+
+.infos-dados p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.imagem-destaques img {
+  width: 440px;
+}
+
+.destaque-1,
+.destaque-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 130px;
+}
+
+.destaque-2 {
+  padding-bottom: 130px;
+}
