@@ -14,7 +14,7 @@ body {
   margin-inline: auto;
 }
 
-/* --------- Header --------- */
+/* --------- HEADER and HOME--------- */
 .header {
   background-image: url(/assets/banner-desktop.webp);
   background-repeat: no-repeat;
@@ -28,6 +28,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 30px;
 }
 
 .logo {
@@ -50,11 +51,14 @@ header {
 #title {
   font-size: 28px;
   letter-spacing: 1.2rem;
+  text-align: center;
 }
 
 #sub-title {
   font-size: 18px;
   letter-spacing: 0.2rem;
+  margin-top: 30px;
+  text-align: center;
 }
 
 #title,
@@ -64,6 +68,7 @@ header {
 }
 
 .btn-act-home {
+  margin-top: 85px;
   width: 200px;
   height: 50px;
   border-radius: 10px;
@@ -75,3 +80,12 @@ header {
   color: var(--branco);
   font-family: "Roboto Slab", serif;
 }
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  width: 600px;
+}
+
+/* --------- HEADER and HOME--------- */
