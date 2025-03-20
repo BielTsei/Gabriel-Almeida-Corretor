@@ -1,0 +1,77 @@
+:root {
+  --branco: #e8ebf7;
+  --primaria: #d1923e;
+  --secundaria: #be9658;
+  --preto: #0c0c0c;
+  --azul: #102542;
+}
+
+/*  font-family: "Roboto Slab", serif; 
+    font-family: "Rhodium Libre", serif;
+*/
+
+body {
+  margin-inline: auto;
+}
+
+/* --------- Header --------- */
+.header {
+  background-image: url(/assets/banner-desktop.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  padding-inline: 220px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 250px;
+}
+
+.btn-header {
+  width: 200px;
+  height: 45px;
+  background-color: var(--primaria);
+  border-radius: 10px;
+}
+
+.btn-header a {
+  color: var(--branco);
+  font-size: 16px;
+  font-family: "Roboto Slab", serif;
+}
+
+#title {
+  font-size: 28px;
+  letter-spacing: 1.2rem;
+}
+
+#sub-title {
+  font-size: 18px;
+  letter-spacing: 0.2rem;
+}
+
+#title,
+#sub-title {
+  font-family: "Rhodium Libre", serif;
+  color: var(--branco);
+}
+
+.btn-act-home {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: var(--primaria);
+}
+
+.btn-act-home a {
+  font-size: 14px;
+  color: var(--branco);
+  font-family: "Roboto Slab", serif;
+}
